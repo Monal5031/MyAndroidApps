@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_first"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="mneuonic.tictactoe.FirstActivity">
+
+    <TextView
+        android:id="@+id/Texter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GAME STATUS"
+        android:textStyle="bold"
+        android:textSize="36sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#3F3FE6"
+        />
+    <TableLayout
+        android:id="@+id/tl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/Texter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TableRow >
+            <Button
+                android:id="@+id/M00"
+                style="@style/board_button"
+                />
+            <Button
+                android:id="@+id/M01"
+                style="@style/board_button"
+                />
+            <Button
+                android:id="@+id/M02"
+                style="@style/board_button"
+                />
+        </TableRow>
+        <TableRow >
+            <Button
+                android:id="@+id/M10"
+                style="@style/board_button"
+                />
+            <Button
+                android:id="@+id/M11"
+                style="@style/board_button"
+                />
+            <Button
+                android:id="@+id/M12"
+                style="@style/board_button"
+                />
+        </TableRow>
+        <TableRow >
+            <Button
+                android:id="@+id/M20"
+                style="@style/board_button"
+                />
+            <Button
+                android:id="@+id/M21"
+                style="@style/board_button"
+                />
+            <Button
+                android:id="@+id/M22"
+                style="@style/board_button"
+                />
+        </TableRow>
+    </TableLayout>
+    <Button
+        android:id="@+id/Reset"
+        android:layout_width="160dp"
+        android:layout_height="64dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tl"
+        android:layout_margin="36dp"
+        android:background="@color/colorPrimary"
+        android:text="RESET"
+        android:textSize="40dp"
+        android:textColor="@color/safed"
+        >
+
+    </Button>
+
+
+</RelativeLayout>
